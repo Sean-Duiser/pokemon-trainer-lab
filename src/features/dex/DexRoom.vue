@@ -287,7 +287,8 @@ onBeforeUnmount(() => {
     <Transition name="dex" mode="out-in">
       <div v-if="selected" class="fixed inset-0 z-50 grid grid-rows-[1fr] bg-black/50" @click.self="closeDetail">
         <div
-          class="mx-auto my-10 w-[95vw] max-w-2xl rounded-2xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden">
+  class="mx-auto my-10 max-w-2xl w-[calc(100vw-2rem)] sm:w-auto rounded-2xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden"
+>
           <div class="flex items-center justify-between px-5 py-4 border-b border-zinc-800">
             <div class="flex items-center gap-3">
               <img :src="artworkUrl(selected.id)" :alt="selected.name" class="w-12 h-12 object-contain"
